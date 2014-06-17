@@ -1,9 +1,9 @@
 {
   "name": "twitter-cmd",
-  "description": "Execute functions in node when prompted through twitter messages",
-  "version": "0.0.0",
+  "description": "Execute functions in node when prompted by twitter messages",
+  "version": "0.0.1",
   "author": "@kaftz",
-  "keywords": [],
+  "keywords": ["twitter", "bot"],
   "dependencies": {},
   "devDependencies": {},
   "main": "index",
