@@ -14,7 +14,7 @@ npm install twit twitter-cmd
 
 ## usage
 
-Sending the twitter message 'hello' to API account will log some output to console. 
+Sending the twitter message 'hello' to the attached API account will log some output to console. 
 
 ```javascript
 var T = require('twit');
@@ -42,6 +42,21 @@ You may pass an options object when initializing.
 ```javascript
 var twitterCmd = new TC(twitter, { /* options */ });
 ```
+
+- `streamOptions` an object containing twitter stream options
+- `key` keyword required before command, defaults to none ([keyword] [command] [args])
+- `allowAll` boolean allowing or disallowing any DM-capable users to access commands, defaults to false
+
+### API
+
+#### getUsernames()
+returns an array of usernames
+
+#### getUser(name)
+returns user object or false if not found
+
+#### addUserCmds(name, commands)
+allow user to call commands {String|Array}
 
 
 
