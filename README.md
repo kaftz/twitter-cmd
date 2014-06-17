@@ -55,11 +55,20 @@ returns an array of usernames
 #### getUser(name)
 returns user object or false if not found
 
-#### addUserCmds(name, commands)
-allow user to call commands {String|Array}
+#### addUserCmds(name, commands), removeUserCmds(name, commands)
+allow or disallow user to call commands (commands a String or Array)
 
+#### addAllCmds(commands), removeAllCmds
+allow or disallow all users to call commands
 
+#### addUser(user), removeUser(user)
+add or remove a user from access list
 
+#### bind(name, fn), unbind(name)
+bind or unbind command
+
+#### message(target, msg, cb)
+send a DM to target user (String) or users (Array), optional callback
 
 
 ## license
