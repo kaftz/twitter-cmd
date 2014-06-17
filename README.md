@@ -1,10 +1,10 @@
 ## twitter-cmd
 
-Execute functions in node when prompted by twitter direct messages.
+Execute functions in node when prompted by twitter direct messages. Uses twitter user stream.
 
 ## requirements
 
-twit: https://github.com/ttezel/twit
+twit (1.1.x): https://github.com/ttezel/twit
 
 ## installation
 
@@ -49,6 +49,9 @@ var twitterCmd = new TC(twitter, { /* options */ });
 
 ### API
 
+#### addUser(user), removeUser(user)
+add or remove a user from access list
+
 #### getUsernames()
 returns an array of usernames
 
@@ -61,15 +64,11 @@ allow or disallow user to call commands (commands a String or Array)
 #### addAllCmds(commands), removeAllCmds
 allow or disallow all users to call commands
 
-#### addUser(user), removeUser(user)
-add or remove a user from access list
-
 #### bind(name, fn), unbind(name)
 bind or unbind command
 
 #### message(target, msg, cb)
-send a DM to target user (String) or users (Array), optional callback
-
+send a DM to target user, optional callback
 
 ## license
 
