@@ -1,0 +1,14 @@
+{
+  "name": "twitter-cmd",
+  "description": "Execute functions in node when prompted through twitter messages",
+  "version": "0.0.0",
+  "author": "@kaftz",
+  "keywords": [],
+  "dependencies": {
+    "twit": "^1.1.15"
+  },
+  "devDependencies": {},
+  "main": "index",
+  "repository": {},
+  "scripts": {}
+}
