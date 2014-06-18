@@ -65,7 +65,7 @@ allow or disallow user to call commands (commands a String or Array)
 allow or disallow all users to call commands
 
 #### bind(name, fn), unbind(name)
-bind or unbind command, fn args: user making call followed by DM string
+bind or unbind command, fn args: user making call followed by DM strings
 
 #### message(target, msg, cb)
 send a DM to target user, optional callback
