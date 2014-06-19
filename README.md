@@ -44,31 +44,18 @@ var twitterCmd = new TC(twitter, { /* options */ });
 ```
 
 - `streamOptions` an object containing twitter stream options
-- `key` keyword required before command, defaults to none ([keyword] [command] [args])
-- `allowAll` boolean allowing or disallowing any DM-capable users to access commands, defaults to false
+- `key` keyword required before command, default none ([keyword] [command] [args])
+- `allowAll` boolean allowing or disallowing any DM capable users to access commands, default false
 
 ### API
 
-#### addUser(user), removeUser(user)
-add or remove a user from access list
-
-#### getUsernames()
-returns an array of usernames
-
-#### getUser(name)
-returns user object or false if not found
-
-#### addUserCmds(name, commands), removeUserCmds(name, commands)
-allow or disallow user to call commands (commands a String or Array)
-
-#### addAllCmds(commands), removeAllCmds
-allow or disallow all users to call commands
-
-#### bind(name, fn), unbind(name)
-bind or unbind command, fn args: user making call followed by DM strings
-
-#### message(target, msg, cb)
-send a DM to target user, optional callback
+- `addUser(user)`, `removeUser(user)` add or remove a user from access list
+- `getUsernames()` returns an array of usernames
+- `getUser(name)` returns user object or false if not found
+- `addUserCmds(name, commands)`, `removeUserCmds(name, commands)` allow or disallow user to call commands (String or Array)
+- `addAllCmds(commands)`, `removeAllCmds()` allow or disallow all users to call commands
+- `bind(name, fn)`, `unbind(name)` bind or unbind command, fn args: user making call followed by DM strings
+- `message(target, msg, cb)` send a DM to target user, optional callback
 
 ## license
 
